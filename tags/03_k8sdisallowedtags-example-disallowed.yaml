@@ -1,17 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: opa-disallowed
+  name: opa-disallowed-tags
   labels:
-    owner: me.agilebank.demo
+    owner: aUserName
 spec:
   containers:
-    - name: opa
-      image: openpolicyagent/opa:latest
-      args:
-        - "run"
-        - "--server"
-        - "--addr=localhost:8080"
+    - name: nginx
+      image: nginx:latest
       resources:
         limits:
           cpu: "100m"
