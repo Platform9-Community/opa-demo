@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment-with-contact
   labels:
     app: nginx
-    contact: jmiller
+    contact: aUserName
 spec:
   replicas: 1
   selector:
